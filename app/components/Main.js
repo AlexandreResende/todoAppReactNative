@@ -27,8 +27,10 @@ export default class Main extends Component {
         'currentDate': currentDate.getFullYear() + '/' + (currentDate.getMonth() + 1) + '/' + currentDate.getDate(),
         'note': this.state.noteText,
       });
-      this.setState({noteArray: this.state.noteArray});
-      this.setState({noteText: ''});
+      this.setState({
+        noteArray: this.state.noteArray,
+        noteText: '',
+      });
     }
   }
 
